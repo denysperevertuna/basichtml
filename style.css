@@ -691,6 +691,7 @@ input::placeholder {
   min-height: 104px;
   border: 1px solid #0f8277;
   border-radius: 4px;
+  resize: none;
 }
 .more-text textarea::placeholder {
   font-family: var(--font-family);
