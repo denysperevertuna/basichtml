@@ -67,6 +67,7 @@ header a {
   padding-left: 8px;
 }
 .dropdown__content {
+  background-color: white;
   min-width: 384px;
   padding: 16px 12px 30px;
   display: flex;
@@ -559,10 +560,10 @@ header a {
   background-color: #0f8277;
 }
 
-.plan__beforeimg::before {
+/* .plan__beforeimg::before {
   content: url(./images/galochka.svg);
   margin-right: 22px;
-}
+} */
 .white-text {
   color: white;
 }
@@ -589,10 +590,15 @@ header a {
   flex-grow: 0;
   margin-bottom: 48px;
 }
-.plan__beforeimg2::before {
+.plan__img, .plan__img2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+/* .plan__beforeimg2::before {
   content: url(./images/galochkawhite.svg);
   margin-right: 16px;
-}
+} */
 .our-students {
   margin-bottom: 77px;
 }
@@ -628,7 +634,9 @@ header a {
   grid-row: 2 / 2;
 }
 .form__background {
-  background-image: url(./images/image.png);
+  /* filter: brightness(50%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -715,6 +723,7 @@ input::placeholder {
   color: #f6fdff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .footer-position {
   display: flex;
@@ -789,4 +798,25 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+.plan__img {
+  background-image: url(./images/galochkawhite.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.plan__img-position {
+  display: flex;
+  align-content: stretch;
+  gap: 16px;
+}
+.plan__img2{
+  background-image: url(./images/galochka.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
 }
